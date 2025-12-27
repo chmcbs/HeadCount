@@ -1,0 +1,30 @@
+{
+  "experiment_name": "03_combined_loss",
+  "timestamp": "20251227_203619",
+  "best_epoch": 27,
+  "total_epochs": 30,
+  "best_val_miou": 0.6609780340416804,
+  "final_val_miou": 0.6554867526375009,
+  "final_val_class_ious": {
+    "background": 0.7484834825506455,
+    "leaf": 0.75762160354141,
+    "stem": 0.3170520666812702,
+    "head": 0.798789857776678
+  },
+  "hyperparameters": {
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "batch_size": 8,
+    "num_epochs": 30,
+    "image_size": 512,
+    "encoder": "resnet50",
+    "loss": "Combined_Dice_CE",
+    "class_weights": [
+      1.0,
+      0.7525419102120777,
+      15.376323625667284,
+      4.338351039598978
+    ]
+  },
+  "training_time_minutes": 89
+}

@@ -1,0 +1,30 @@
+{
+  "experiment_name": "02_dice_stem",
+  "timestamp": "20251227_185625",
+  "best_epoch": 25,
+  "total_epochs": 30,
+  "best_val_miou": 0.6691532671489226,
+  "final_val_miou": 0.6592402939873385,
+  "final_val_class_ious": {
+    "background": 0.7298728938459762,
+    "leaf": 0.7779614692054173,
+    "stem": 0.339267435071467,
+    "head": 0.7898593778264937
+  },
+  "hyperparameters": {
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "batch_size": 8,
+    "num_epochs": 30,
+    "image_size": 512,
+    "encoder": "resnet50",
+    "loss": "DiceLoss",
+    "class_weights": [
+      1.0,
+      0.7525419102120777,
+      15.376323625667284,
+      4.338351039598978
+    ]
+  },
+  "training_time_minutes": 127
+}

@@ -1,0 +1,30 @@
+{
+  "experiment_name": "01_baseline",
+  "timestamp": "20251227_162343",
+  "best_epoch": 48,
+  "total_epochs": 50,
+  "best_val_miou": 0.6356831175221431,
+  "final_val_miou": 0.634300523812866,
+  "final_val_class_ious": {
+    "background": 0.7465601648372008,
+    "leaf": 0.7327751007586427,
+    "stem": 0.28103947360483117,
+    "head": 0.7768273560507892
+  },
+  "hyperparameters": {
+    "learning_rate": 0.0001,
+    "weight_decay": 0.0001,
+    "batch_size": 8,
+    "num_epochs": 50,
+    "image_size": 512,
+    "encoder": "resnet50",
+    "loss": "CrossEntropyLoss",
+    "class_weights": [
+      1.0,
+      0.7525419102120777,
+      10.250882417111523,
+      4.338351039598978
+    ]
+  },
+  "training_time_minutes": 127
+}
