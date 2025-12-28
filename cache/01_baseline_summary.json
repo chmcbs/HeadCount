@@ -1,6 +1,6 @@
 {
   "experiment_name": "01_baseline",
-  "timestamp": "20251227_162343",
+  "timestamp": "20251228_133838",
   "best_epoch": 48,
   "total_epochs": 50,
   "best_val_miou": 0.6356831175221431,

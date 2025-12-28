@@ -1,6 +1,6 @@
 {
   "experiment_name": "02_dice_stem",
-  "timestamp": "20251227_185625",
+  "timestamp": "20251228_145534",
   "best_epoch": 25,
   "total_epochs": 30,
   "best_val_miou": 0.6691532671489226,

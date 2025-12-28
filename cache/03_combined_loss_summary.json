@@ -1,6 +1,6 @@
 {
   "experiment_name": "03_combined_loss",
-  "timestamp": "20251227_203619",
+  "timestamp": "20251228_161300",
   "best_epoch": 27,
   "total_epochs": 30,
   "best_val_miou": 0.6609780340416804,
@@ -26,5 +26,5 @@
       4.338351039598978
     ]
   },
-  "training_time_minutes": 89
+  "training_time_minutes": 77
 }
