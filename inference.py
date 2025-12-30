@@ -83,7 +83,6 @@ class GWFSSModel:
         return predictions
 
     def count_heads(self, predictions, min_distance=15):
-        """Count heads using distance transform peaks to separate touching instances."""
         head_mask = (predictions == 3).astype(np.uint8)
         
         if head_mask.sum() == 0:
@@ -130,6 +129,11 @@ class GWFSSModel:
         
         mask_img = Image.fromarray(mask_rgb)
         overlay = Image.blend(image.convert('RGB'), mask_img, alpha)
+        return overlay
+
+    def predict_and_overlay(self, image, alpha=0.5, heads_only=True):
+        predictions = self.predict(image)
+        overlay = self.overlay_mask(image, predictions, alpha=alpha, heads_only=heads_only)
         return overlay
 
 if __name__ == "__main__":
