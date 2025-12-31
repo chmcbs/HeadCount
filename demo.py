@@ -36,7 +36,7 @@ def process_image(image):
             overlay_np[max(0,y-3):y+4, max(0,x-3):x+4] = [255, 0, 0]
         
         overlay = Image.fromarray(overlay_np)
-        count_message = f"### 🌾 {num_heads} heads detected!"
+        count_message = f"### 🌾 {num_heads} heads detected"
         return count_message, overlay
     except Exception as e:
         return f"Error: {str(e)}", None
