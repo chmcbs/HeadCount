@@ -59,7 +59,7 @@ Best performance is achieved with overhead imagery under diffuse lighting. Known
 
 ## Training Data
 
-The model was trained on [`GWFSS_v1.0_labelled`](https://huggingface.co/datasets/GlobalWheat/GWFSS_v1.0) from the [Global Wheat Full Semantic Organ Segmentation](https://doi.org/10.1016/j.plaphe.2025.100084) dataset.
+The model is trained on [`GWFSS_v1.0_labelled`](https://huggingface.co/datasets/GlobalWheat/GWFSS_v1.0) from the [Global Wheat Full Semantic Organ Segmentation](https://doi.org/10.1016/j.plaphe.2025.100084) dataset.
 
 ## License
 
