@@ -155,7 +155,7 @@ if __name__ == "__main__":
     
     # Count heads
     num_heads = model.count_heads(predictions)
-    print(f"\n🌾 {num_heads} wheat heads detected")
+    print(f"\n🌾 {num_heads} heads detected!")
     
     # Create visualisations
     print("\nGenerating visualisations...")
