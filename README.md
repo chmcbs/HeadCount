@@ -10,7 +10,7 @@ A semantic segmentation model for counting wheat heads in field images. Designed
 
 ## ℹ️ About
 
-Manual wheat head counting is time-consuming and impractical at scale. Traditional computer vision methods struggle with overlapping heads and varying lighting conditions. HeadCount uses a fine-tuned deep learning model trained to segment wheat heads from other organs, enabling accurate counting from drone-captured aerial images.
+Manual wheat head counting is time-consuming and impractical at scale. Traditional computer vision methods struggle with overlapping heads and varying lighting conditions. HeadCount is a fine-tuned deep learning model trained to segment wheat heads from other organs, enabling automated, accurate counting from field images.
 
 ## 📁 Project Structure
 
