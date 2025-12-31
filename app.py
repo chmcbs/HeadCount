@@ -52,8 +52,11 @@ if os.path.exists("examples"):
 
 # Create Gradio interface
 with gr.Blocks(title="HeadCount") as demo:
-    gr.Markdown("# 🌾 HeadCount: Automated Wheat Head Counter")
-    gr.Markdown("Upload an image to automatically detect and count wheat heads.")
+    gr.Markdown("# 🌾 HeadCount")
+    gr.Markdown("### A semantic segmentation model for counting wheat heads in field images.")
+    gr.Markdown("- Designed for yield estimation, flowering time detection, and field maturity assessment")
+    gr.Markdown("- Best results with overhead imagery under diffuse lighting")
+    gr.Markdown("- Performance may vary with harsh lighting or heavily overlapping heads")
     
     with gr.Row():
         image_input = gr.Image(type="pil", label="Upload Image")
@@ -65,7 +68,6 @@ with gr.Blocks(title="HeadCount") as demo:
     with gr.Row():
         with gr.Column():
             if example_images:
-                gr.Markdown("### Example Images")
                 gr.Examples(examples=example_images, inputs=image_input)
         
         with gr.Column():
@@ -76,6 +78,8 @@ with gr.Blocks(title="HeadCount") as demo:
         inputs=image_input,
         outputs=[head_count_output, overlay_output]
     )
+
+    gr.Markdown("<div style='text-align: center'>Powered by <strong><a href='https://huggingface.co/chmcbs/HeadCount' target='_blank'>chmcbs/HeadCount</a></strong></div>")
 
 if __name__ == "__main__":
     demo.launch(share=False, server_name="0.0.0.0", server_port=7860)
